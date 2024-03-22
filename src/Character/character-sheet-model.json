@@ -1,0 +1,215 @@
+{
+    "Game": {},
+    "Player": {
+        "Name": "My Real Name"
+    },
+    "Character": {
+        "Name": "My Name",
+        "NickName": "My Nick Name",
+        "HomeWorld": "My Home World",
+        "Concept": "Concept",
+        "Hair": {
+            "Color": "",
+            "Length": "",
+            "Style": ""
+        },
+        "Eyes": "",
+        "Skin": "",
+        "Age": 0,
+        "Height": {
+            "feet": 0,
+            "inches": 0
+        },
+        "Other": "",
+        "Birthmarks":[
+        ],
+        "Tattoos": [            
+        ],
+        "TotalWoundPoints": 0,
+        "CurrentWoundPoints": 0,
+        "TotalStunPoints": 0,
+        "CurrentStunPoints": 0,
+        "Attributes": {
+            "Strength": {
+                "Abreviation": "Str",
+                "DieType": "D2"
+            },
+            "Agility": {
+                "Abreviation": "Agi",
+                "DieType": "D2"
+            },
+            "Vitality": {
+                "Abreviation": "Vit",
+                "DieType": "D2"
+            },
+            "Alertness": {
+                "Abreviation": "Ale",
+                "DieType": "D2"
+            },
+            "Intelligence": {
+                "Abreviation": "Int",
+                "DieType": "D2"
+            },
+            "Willpower": {
+                "Abreviation": "Wil",
+                "DieType": "D2"
+            }
+        },
+        "DerivedTraits": {
+            "LifePoints": "Str + Vit",
+            "Initiative": "Agi + Ale",
+            "Endurance": "Vit + Wil",
+            "Resistance": "Vit + Vit",
+            "BurstOfStrength": "Str + Str",
+            "OutOfHarmsWay": "Agi + Ale",
+            "LongHaul": "Str + Vit",
+            "Memorize": "Int + Ale",
+            "Recall": "Int + Wil"
+        },
+        "Achievement": {
+            "TotalAchievementPoints": 0,
+            "PlotPoints": 0,
+            "AchievementPoints": 0
+        },
+        "Skills": {
+            "AnimalHandling": {
+                "DieType": "D2",
+                "Specialized": {
+                    "Training": "D2",
+                    "Riding": "D2",
+                    "VetZoology": "D2"
+                }
+            },
+            "Artistry": {
+                "DieType": "D2",
+                "Specialized": {
+                    "Apprasial": "D2",
+                    "Cooking": "D2",
+                    "Forgery": "D2",
+                    "GameDesign": "D2",
+                    "Painting": "D2",
+                    "Photography": "D2",
+                    "Poetry": "D2",
+                    "Sculpting": "D2",
+                    "Writing": "D2"
+                }
+            },
+            "Athletics": {
+                "DieType": "D2",
+                "Specialized": {
+                    "Climbing": "D2",
+                    "Contortion": "D2",
+                    "Dodge": "D2",
+                    "Juggling": "D2",
+                    "Jumping": "D2",
+                    "Gymnastics": "D2",
+                    "Parachuting": "D2",
+                    "Parasailing": "D2",
+                    "PoleVaulting": "D2",
+                    "Riding": "D2",
+                    "Running": "D2",
+                    "Swimming": "D2",
+                    "WeightLifting": "D2"
+                }
+            },
+            "Covert": {
+                "DieType": "D2",
+                "Specialized": {
+                    "Camouflage": "D2",
+                    "DisableDevices": "D2",
+                    "Forgery": "D2",
+                    "Infiltration": "D2",
+                    "OpenLocks": "D2",
+                    "Sabotage": "D2",
+                    "SlightOfHand": "D2",
+                    "Stealth": "D2",
+                    "Streetwise": "D2",
+                    "Surveliance": "D2"
+                }
+            },
+            "Discipline": {
+                "DieType": "D2",
+                "Specialized": {
+                    "Concentration": "D2",
+                    "Interrogation": "D2",
+                    "Intimidation": "D2",
+                    "Leadership": "D2",
+                    "MentalResistance": "D2",
+                    "Morale": "D2"
+                }
+            },
+            "Guns": {
+                "DieType": "D2",
+                "Specialized": {
+                    "AssaultRifles": "D2",
+                    "EnergyWeapons": "D2",
+                    "GrenadeLaunchers": "D2",
+                    "Gunsmithing": "D2",
+                    "MachineGuns": "D2",
+                    "Pistols": "D2",
+                    "Rifles": "D2",
+                    "Shotguns": "D2"
+                }
+            },
+            "HeavyWeapons": {
+                "DieType": "D2",
+                "Specialized": {
+                    "Artillery": "D2",
+                    "Catapults": "D2",
+                    "Demolitions": "D2",
+                    "ForwardObserver": "D2",
+                    "MountedGuns": "D2",
+                    "RepairHeavyWeapons": "D2",
+                    "RocketLaunchers": "D2",
+                    "ShipsCannons": "D2",
+                    "SiegeWeapons": "D2"
+                }
+            },
+            "Influence": {
+                "DieType": "D2",
+                "Specialized": {
+                    "Administration": "D2",
+                    "Barter": "D2",
+                    "Bureaucracy": "D2",
+                    "Conversation": "D2",
+                    "Counseling": "D2",
+                    "Interrogation": "D2",
+                    "Intimidation": "D2",
+                    "Leadership": "D2",
+                    "Marketing": "D2",
+                    "Persuasion": "D2",
+                    "Politics": "D2",
+                    "Seduction": "D2",
+                    "Streetwise": "D2"                    
+                }
+            },
+            "Knowledge": {
+                "DieType": "D2",
+                "Specialized": {
+                    "Apprasial": "D2",
+                    "Cultures": "D2",
+                    "History": "D2",
+                    "Law": "D2",
+                    "Literature": "D2",
+                    "Philosophy": "D2",
+                    "Religion": "D2",
+                    "Sports": "D2"
+                }
+            },
+            "Linguist": {
+                "DieType": "D2",
+                "Specialized": {}
+            },
+            "MechanicalEngineering": {
+                "DieType": "D2",
+                "Specialized": {
+                    "CreateMechanicalDevices": "D2",
+                    "MachineryMaintenance": "D2",
+                    "MechanicalRepairs": "D2",
+                    "FixMechanicalSecuritySystem": "D2",
+                    "Plumbing": "D2"
+                }
+            }
+        }
+    }
+}
