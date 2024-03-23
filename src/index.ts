@@ -16,5 +16,13 @@ let skills = new Skills(
     Dice.d0, Dice.d4);
 
 let character = new Character(hair, height, attributes, skills);
+character.Name = "Bob";
 
 console.log(character.Skills.Artistry.roll());
+
+const alertBtn = document.querySelector('#alertBtn') as HTMLButtonElement;
+const header = document.querySelector('#header') as HTMLHeadingElement
+
+alertBtn.addEventListener('click', () => {
+  header.innerHTML = `Artistry ${character.Skills.Artistry.roll()}`;
+});
