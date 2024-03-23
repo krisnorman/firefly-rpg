@@ -7,3 +7,4 @@ export class Die {
     return Roller.roll(this.sides, times);
   }
 }
+

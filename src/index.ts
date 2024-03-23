@@ -1,20 +1,20 @@
-import { Die } from "./Die";
 import { Character } from "./Character/Character";
 import { Hair } from "./Character/Hair";
 import { Height } from "./Character/Height";
 import { Attributes } from "./Character/Attributes";
-
-let d2 = new Die("d2", 2);
-let d4 = new Die("d4", 4);
-let d6 = new Die("d6", 6);
-let d8 = new Die("d8", 8);
-let d10 = new Die("d10", 10);
-let d12 = new Die("d12", 12);
+import { Skills } from "./Character/Skills";
+import { Dice } from "./Dice";
 
 let hair = new Hair("red", "short", "strange");
-let height = new Height();
-let attributes = new Attributes(d4, d6, d2, d6, d8, d6);
+let height = new Height(5, 6);
+let attributes = new Attributes(Dice.d0, Dice.d6, Dice.d2, Dice.d6, Dice.d8, Dice.d6);
+let skills = new Skills(
+    Dice.d0, Dice.d6, Dice.d2, Dice.d6, Dice.d8, 
+    Dice.d6, Dice.d2, Dice.d8, Dice.d6, Dice.d10, 
+    Dice.d12, Dice.d0, Dice.d6, Dice.d10, Dice.d4, 
+    Dice.d8, Dice.d10, Dice.d0, Dice.d2, Dice.d6, 
+    Dice.d0, Dice.d4);
 
-let character = new Character(hair, height, attributes);
+let character = new Character(hair, height, attributes, skills);
 
-console.log(character.DerivedTraits.Initiative.roll());
+console.log(character.Skills.Artistry.roll());

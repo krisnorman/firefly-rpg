@@ -1,11 +1,13 @@
 
 export interface IHeight {
-    feet: number;
-    inches: number;
+    Feet: number;
+    Inches: number;
 }
 
 export class Height implements IHeight {
-    feet: number = 0;
-    inches: number = 0;
+    constructor(public Feet: number, public Inches: number) {}
 
+    public toString = () : string => {
+        return `${this.Feet}' ${this.Inches}" tall`;
+    }
 }

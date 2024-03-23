@@ -1,18 +1,17 @@
-
 export interface IHair {
-    Color: string;
-    Length: string;
-    Style: string;
+  Color: string;
+  Length: string;
+  Style: string;
 }
 
 export class Hair implements IHair {
-    Color: string;
-    Length: string;
-    Style: string;
+  constructor(
+    public Color: string,
+    public Length: string,
+    public Style: string
+  ) {}
 
-    constructor(color: string, length: string, style: string) {
-        this.Color = color;
-        this.Length = length;
-        this.Style = style;
-    }
+  public toString = (): string => {
+    return `${this.Length} ${this.Color} ${this.Style} hair`;
+  };
 }

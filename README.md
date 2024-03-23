@@ -1,2 +1,2 @@
 # firefly-rpg
-Homebrew Firefly TTRPG
+Homebrew Firefly TTRPG in Typescript
