@@ -6,18 +6,7 @@ import { Vitality } from "../Attributes/Vitality";
 import { Willpower } from "../Attributes/Willpower";
 import { Die } from "../Die";
 
-
-
-export interface IAttributes {
-    Strength: Strength;
-    Agility: Agility;
-    Vitality: Vitality;
-    Alertness: Alertness;
-    Intelligence: Intelligence;
-    Willpower: Willpower;
-}
-
-export class Attributes implements IAttributes {
+export class Attributes {
     Strength: Strength;
     Agility: Agility;
     Vitality: Vitality;

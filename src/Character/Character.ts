@@ -1,8 +1,8 @@
-import { IHeight } from "./Height";
-import { IHair } from "./Hair";
-import { IAttributes } from "./Attributes";
-import { Achievement, IAchievement } from "./Achievement";
-import { DerivedTraits, IDerivedTraits } from "./DerivedTraits";
+import { Height } from "./Height";
+import { Hair } from "./Hair";
+import { Attributes } from "./Attributes";
+import { Achievement } from "./Achievement";
+import { DerivedTraits } from "./DerivedTraits";
 import { ISkills } from "./Skills";
 
 export interface ICharacter {
@@ -10,11 +10,11 @@ export interface ICharacter {
   NickName: string;
   HomeWorld: string;
   Concept: string;
-  Hair: IHair;
+  Hair: Hair;
   Eyes: string;
   Skin: string;
   Age: number;
-  Height: IHeight;
+  Height: Height;
   Other: string;
   Birthmarks: string[];
   Tattoos: string[];
@@ -22,9 +22,9 @@ export interface ICharacter {
   CurrentWoundPoints: number;
   TotalStunPoints: number;
   CurrentStunPoints: number;
-  Attributes: IAttributes;
-  DerivedTraits: IDerivedTraits;
-  Achievement: IAchievement;
+  Attributes: Attributes;
+  DerivedTraits: DerivedTraits;
+  Achievement: Achievement;
   Skills: ISkills;
 }
 
@@ -43,13 +43,13 @@ export class Character implements ICharacter {
   CurrentWoundPoints: number = 0;
   TotalStunPoints: number = 0;
   CurrentStunPoints: number = 0;
-  DerivedTraits: IDerivedTraits;
-  Achievement: IAchievement;
+  DerivedTraits: DerivedTraits;
+  Achievement: Achievement;
 
   constructor(
-    public Hair: IHair,
-    public Height: IHeight,
-    public Attributes: IAttributes,
+    public Hair: Hair,
+    public Height: Height,
+    public Attributes: Attributes,
     public Skills: ISkills
   ) {
     this.DerivedTraits = new DerivedTraits(Attributes);

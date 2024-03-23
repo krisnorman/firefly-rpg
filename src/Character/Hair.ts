@@ -1,10 +1,4 @@
-export interface IHair {
-  Color: string;
-  Length: string;
-  Style: string;
-}
-
-export class Hair implements IHair {
+export class Hair {
   constructor(
     public Color: string,
     public Length: string,
